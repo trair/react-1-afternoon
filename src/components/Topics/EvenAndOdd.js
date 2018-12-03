@@ -19,8 +19,8 @@ class EvenAndOdd extends Component {
     handleSplit() {
         let {userInput} = this.state
         let inputArr = userInput.split(',')
-        let newEvenArray = inputArr.filter((el) => el % 2 === 0)
-        let newOddArray = inputArr.filter((el) => el % 2 === 1)
+        let newEvenArray = inputArr.filter((el) => el % 2 === 0) + ' '
+        let newOddArray = inputArr.filter((el) => el % 2 === 1) + ' '
         this.setState({
             evenArray: newEvenArray,
             oddArray: newOddArray
